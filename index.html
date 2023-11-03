@@ -1,6 +1,7 @@
 <html><head>
 <title>Ninja Platformer</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="style.css">
 <script type="text/javascript">
 
 	// Default shell for PICO-8 0.2.2 (includes @weeble's gamepad mod 1.0)
@@ -983,7 +984,7 @@ canvas{
 .p8_start_button{
 	cursor:pointer;
 	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEqklEQVR4Ae2dT4rbSBjFPzeaVSMYiJmF7EXTEIhDQFdIuldezC51gAHvlDuEvkN7pxvUAbzNFURIlqEDRisTDKIh0IuZhTy2ulRq/XGp/kjvUQur6Jaqvu9777edsMWMIHO6QAnQADQAQgPGK7aYVS26fUO3b8qP2O+2L10TtphJG8MDn8KMiCjxD1vHR+y332ebthGUvyX/kS/sn7NfIa9q9qfbFfJZofgypsRnqdgPQNiwxAacoh9SrjDjwf9gqGoAS7MTPSC1QgQhghBBdREEGXYAGAAGjNsBkGZ5aiEcXT8ef69/XFp7bTPnDDNOYgqpZEDxVuVHO6uv9Zx9M8Dmkbf2nGIDzowg9KMmggIxXUQGoOiGHXAOAyDDDIAUOAAaDoShJhAGA8AARBAiyKIIggw7AAwAAxBBkEzR9WN0/aj8tZ5bEC6WYP3jUv9H898KP+0SA4QB7GMeaz/aO4RtlraR7+ujTSBseQQZ70fvDEDRpR89BpHyA0zYYiY1wXS7GsB82aPdPB6CA9xV1UC7BOFBymEID7MBLM0o8VEXYw2AEEFwAAQGjEeeqhft5rF0f7pdocq6IijxD+v4CGmGMEuzQ4glPksBc0MMOLQB0h1BkPEIguAAMAAy5oAw48GpecXfkJYGJD5LwQ87IAyYgwEjjCDIngiCTDggzHiA+LKDAWAJGDDCBiQ+S8EPOyAMmBtmAAQGjDuCIBMOCDMeIL7sYABY0lDe2C68m8fS/el2ZeS7SiMo8VnqAj8S/7COj5q/W1iiA1RB2HKY54PCyc9/81Drd3UwwAmxNDNuWaURBL2sMOOBONxiAyyPjuFJqQNkHYaKENbHgFGx5Bx5/RI/Jb6MW/3XdLtyonC7ebt7sQ0RSbJdF4QT/9kq7xz3nYqUyis0vpfoAPUQTvyDG4pfIUkausgPyS1Ifl/p+PfIgOILy6cs7wxGbe+rNIJklG8o9c7ToDA737ViA5wshMsSGdCH+PK5Hzdy53LS3fv8YNLznOP4Jvc9asIWM6kJpttVq8Ps5rGSorT9bltVnbPv+1a1QZkD+i6cbeds+x6+jKWOUQphSCeEP3yNiwulrFeY8cCvaQBLM0rEPyorurp/+/fv4kJ5u0G7SwRFV/frh0+0v6H9DV388yX+i/Y3KK+mCDpU/6hfP99/fEff/kUpu0WQ1/YlefWjq/viI81QXUUOaMKA6M/vz0wAaWbAev82ero7jT+k0AGNIPx0R69fofpKJDKgFsJEtP7jMz2gdJ0gTGIKdWEAZJgBUI8MaBJBUPcICsR0gQMscwAYoJkBniuH383jVn8/3a6cdIDlE9R0uSPRAZZDuGzhssqgswjCJKYQGGCYAU5FUJjVTrflDq5ngHMXcH2AHINwLQOci1AwwPAAebYdcjeP5aO9IaIBZqOVEZT4kjVQiQ6wBMK1WV8lS85fCWESU2hoDLD6/DIGWBlBYcaDwWZOTQOstvAAIqg0WJZCuDMDnHcAGKB5sCZsMZN7eWmoghtFWWTo/G3vVRdBif9sadtXN3Rmzt/4Xt5LR88dXRwrOryrz31F6W/s/O3uVRlBkBkIQ2gAGgChAePRf8CVTWERD7qHAAAAEHRFWHRMb2RlUE5HADIwMTEwMjIx41m2wQAAAABJRU5ErkJggg==");
-	-repeat center;
+	
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
 
@@ -1008,6 +1009,18 @@ canvas{
 </head>
 
 <body style="padding:0px; margin:0px; background-color:#222; color:#ccc">
+	<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://scythe101.github.io">Home</a>
+      <a href="https://scythe101.github.io/htmlclickergame">HTML Clicker Game</a>
+      <a href="https://scythe101.github.io/SummationCalc">Summation Notation Calculator</a>
+      <a href="https://scythe101.github.io/scythes_breakout">Scythe's Breakout</a>
+      <a href="https://scythe101.github.io/scythes_shmup/">Scythe's Shmup</a>
+      <a href="https://scythe101.github.io/scythe-os/">Scythe OS</a>
+      <a href="https://scythe101.github.io/ninja_platformer">Ninja Platformer</a>
+      
+    </div>
+	<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
 
@@ -1127,6 +1140,9 @@ div.a {
         font-size:20px
 }
 </style>
+<br>
+<br>
+<br>
 <div class="a">
 <p>Controls:<br>
 Arrows to move the paddle<br>
@@ -1138,5 +1154,6 @@ O-Skip Level</p>
 
 
 </div> <!-- body_0 -->
-</body></html>
+</body>
+<script src="main.js"></script></html>
 
